@@ -1,0 +1,44 @@
+<tool id="bioinf_test" name="Basic BED analyzer" version="0.1.0">
+    <requirements>
+    </requirements>
+    <command detect_errors="exit_code"><![CDATA[
+        python $__tool_directory__/bed_analyzer.py '$stats' '$input1' '$output1';
+    ]]></command>
+    <inputs>
+        <param type="boolean" name="stats" 
+               truevalue="--stats=yes" falsevalue="--stats=no"
+               label="Compute statistics?"/>
+        <param type="data" name="input1" format="bed"
+               label="BED file"/>
+    </inputs>
+    <outputs>
+        <data name="output1" format="txt" />
+    </outputs>
+    <tests>
+        <test>
+            <param name="stats" value="true" />
+            <param name="input1" value="LCT.bed" ftype="bed"/>
+            <output name="output1" file="output2.txt" ftype="txt"/>
+        </test>
+        <test>
+            <param name="stats" value="false" />
+            <param name="input1" value="LCT.bed" ftype="bed"/>
+            <output name="output1" file="output1.txt" ftype="txt"/>
+        </test>
+    </tests>
+    <help><![CDATA[
+       A Basic BED analyzer.
+
+       Counts entries and optionally reports basic stats
+    ]]></help>
+    <citations>
+        <citation type="bibtex">
+@book{antao2019bioinformatics,
+  title={Bioinformatics with Python cookbook, Second edition},
+  author={Antao, Tiago},
+  year={2015},
+  publisher={Packt Publishing Ltd}
+}
+        </citation>
+    </citations>
+</tool>

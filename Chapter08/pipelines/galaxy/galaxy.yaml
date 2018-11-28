@@ -1,0 +1,7 @@
+rest_protocol: http
+server: localhost
+rest_port: 8080
+ftp_port: 8021
+user: admin@galaxy.org
+password: admin
+api_key: admin
