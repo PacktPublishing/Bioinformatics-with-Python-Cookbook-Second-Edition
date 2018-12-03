@@ -4,13 +4,13 @@
 
 This is the code repository for [Bioinformatics with Python Cookbook, Second Edition](Packt UTM URL of the Book), published by Packt.
 
-**Subtitle from EPIC**
+**Learn how to use modern Python bioinformatics libraries and applications to do cutting-edge research in computational biology**
 
 ## What is this book about?
 Bioinformatics is an active research field that uses a range of simple-to-advanced computations to extract valuable information from biological data.
 This book covers next-generation sequencing, genomics, metagenomics, population genetics, phylogenetics, and proteomics. You'll learn modern programming techniques to analyze large amounts of biological data. With the help of real-world examples, you'll convert, analyze, and visualize datasets using various Python tools and libraries.
 
-This book covers the following exciting features: <First 5 What you'll learn points>
+This book covers the following exciting features:
 * Learn how to process large next-generation sequencing (NGS) datasets
 * Work with genomic dataset using the FASTQ, BAM, and VCF formats
 * Learn to perform sequence comparison and phylogenetic reconstruction
