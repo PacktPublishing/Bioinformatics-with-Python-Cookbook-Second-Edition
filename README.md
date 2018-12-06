@@ -1,8 +1,8 @@
 # Bioinformatics with Python Cookbook, Second Edition
 
-<a href="Packt UTM URL of the Book"><img src="Cover Image URL of the Book" alt="Book Name" height="256px" align="right"></a>
+<a href="https://india.packtpub.com/in/big-data-and-business-intelligence/bioinformatics-python-cookbook-second-edition?utm_source=github&utm_medium=repository&utm_campaign=9781789344691"><img src="Cover Image URL of the Book" alt="Book Name" height="256px" align="right"></a>
 
-This is the code repository for [Bioinformatics with Python Cookbook, Second Edition](Packt UTM URL of the Book), published by Packt.
+This is the code repository for [Bioinformatics with Python Cookbook, Second Edition](https://india.packtpub.com/in/big-data-and-business-intelligence/bioinformatics-python-cookbook-second-edition?utm_source=github&utm_medium=repository&utm_campaign=9781789344691), published by Packt.
 
 **Learn how to use modern Python bioinformatics libraries and applications to do cutting-edge research in computational biology**
 
