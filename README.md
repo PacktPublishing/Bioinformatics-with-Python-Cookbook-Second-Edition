@@ -38,7 +38,7 @@ from rpy2.robjects import pandas2ri
 **Following is what you need for this book:**
 	This book is for Data data Scientistsscientists, Bioinformatics bioinformatics analysts, researchers, and Python developers who want to address intermediate-to-advanced biological and bioinformatics problems using a recipe-based approach. Working knowledge of the Python programming language is expected.
 
-With the following software and hardware list you can run all code files present in the book (Chapter 1-15).
+With the following software and hardware list you can run all code files present in the book (Chapter 1-11).
 
 ### Software and Hardware List
 
