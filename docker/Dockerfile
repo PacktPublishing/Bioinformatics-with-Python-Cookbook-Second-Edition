@@ -22,18 +22,16 @@ RUN apt-get clean
 
 
 RUN conda config --add channels bioconda
+RUN conda config --add channels r
+RUN conda config --add channels conda-forge
 RUN conda install --yes biopython=1.70
 RUN conda install --yes statsmodels pysam plink gffutils genepop trimal
-RUN conda install --yes  simuPOP
+RUN conda install --yes simuPOP
+RUN conda install --yes pip
+RUN conda install --yes rpy2
 
-RUN root/miniconda/bin/pip install rpy2
-#RUN root/miniconda/bin/pip install pygraphviz eigensoft
-RUN root/miniconda/bin/pip install seaborn
-RUN root/miniconda/bin/pip install pyvcf
-RUN root/miniconda/bin/pip install dendropy
-RUN root/miniconda/bin/pip install pexpect
-RUN root/miniconda/bin/pip install reportlab
-RUN root/miniconda/bin/pip install networkx
+RUN conda install --yes pygraphviz eigensoft
+RUN conda install --yes seaborn pexpect pyvcf dendropy networkx reportlab
 
 RUN pip install pygenomics
 
