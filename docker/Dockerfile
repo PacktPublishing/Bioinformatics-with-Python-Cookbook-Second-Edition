@@ -42,4 +42,4 @@ RUN git clone https://github.com/PacktPublishing/Bioinformatics-with-Python-Cook
 WORKDIR /PacktPublising/notebooks
 
 RUN echo setterm -foreground magenta >> /etc/bash.bashrc
-CMD jupyter-notebook --ip=0.0.0.0 --no-browser --port=9875
+CMD jupyter-notebook --ip=0.0.0.0 --no-browser --allow-root --port=9875
