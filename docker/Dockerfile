@@ -33,6 +33,8 @@ RUN conda install --yes rpy2 r-ggplot2 r-gridextra
 RUN conda install --yes pygraphviz eigensoft
 RUN conda install --yes seaborn pexpect pyvcf dendropy networkx reportlab
 
+RUN conda install --yes tzlocal
+
 RUN pip install pygenomics
 
 EXPOSE 9875
