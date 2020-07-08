@@ -1,31 +1,16 @@
 FROM continuumio/anaconda3:5.2.0
 MAINTAINER Tiago Antao <tiagoantao@gmail.com>
+#ENV DEBIAN_FRONTEND noninteractive
 
-ENV DEBIAN_FRONTEND noninteractive
-
-RUN apt-get update && apt-get upgrade -y
-RUN apt-get install -y git wget build-essential unzip
+RUN apt-get update && apt-get upgrade -y && apt-get install -y git wget build-essential unzip graphviz libgraphviz-dev pkg-config swig libx11-dev libgsl0-dev libopenblas-dev liblapacke-dev
 #RUN apt-get install -y samtools mafft muscle raxml tabix
 
-#R
+# R
 #RUN apt-get install -y r-bioc-biobase
 
-RUN apt-get install -y graphviz libgraphviz-dev pkg-config  # phylo/biopython 
-RUN apt-get install -y swig  # simupop
-RUN apt-get install -y libx11-dev libgsl0-dev libopenblas-dev liblapacke-dev
-#RUN apt-get install -y libgsl0ldbl
-#RUN apt-get install -y libgsl0-dev libopenblas-dev liblapacke-dev
-#RUN apt-get clean
-
-RUN conda config --add channels bioconda
-RUN conda config --add channels r
-RUN conda config --add channels conda-forge
-# RUN conda update -n base -c defaults conda # Update conda
-RUN conda install --yes python=3.6 biopython=1.70 
-RUN conda install --yes statsmodels pysam plink gffutils genepop trimal simuPOP pip rpy2 r-ggplot2 r-gridextra pygraphviz eigensoft seaborn pexpect pyvcf dendropy networkx reportlab tzlocal
-
-RUN pip install pygenomics
-
+RUN conda update -n base -c defaults conda --force && conda update -y --all && conda install -y -c conda-forge statsmodels pip rpy2 r-ggplot2 r-gridextra pygraphviz seaborn pexpect networkx reportlab tzlocal simupop biopython
+RUN conda install -y -c bioconda gffutils pyvcf dendropy genepop plink trimal eigensoft pysam
+RUN pip install pygenomics ipython
 EXPOSE 9875
 
 RUN git clone https://github.com/PacktPublishing/Bioinformatics-with-Python-Cookbook-Second-Edition.git
