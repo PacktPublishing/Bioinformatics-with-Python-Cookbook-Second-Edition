@@ -1,6 +1,6 @@
 # Bioinformatics with Python Cookbook, Second Edition
 
-<a href="https://www.packtpub.com/big-data-and-business-intelligence/bioinformatics-python-cookbook-second-edition?utm_source=github&utm_medium=repository&utm_campaign=9781789344691"><img src="https://www.packtpub.com/sites/default/files/B11164_0.png" alt="Book Name" height="256px" align="right"></a>
+<a href="https://www.packtpub.com/big-data-and-business-intelligence/bioinformatics-python-cookbook-second-edition?utm_source=github&utm_medium=repository&utm_campaign=9781789344691"><img src="https://www.packtpub.com/media/catalog/product/cache/4cdce5a811acc0d2926d7f857dceb83b/b/1/b11164_0.png" alt="Bioinformatics with Python Cookbook, Second Edition" height="300px" align="right"></a>
 
 This is the code repository for [Bioinformatics with Python Cookbook, Second Edition](https://india.packtpub.com/in/big-data-and-business-intelligence/bioinformatics-python-cookbook-second-edition?utm_source=github&utm_medium=repository&utm_campaign=9781789344691), published by Packt.
 
@@ -36,7 +36,7 @@ from rpy2.robjects import pandas2ri
 ```
 
 **Following is what you need for this book:**
-	This book is for Data data Scientistsscientists, Bioinformatics bioinformatics analysts, researchers, and Python developers who want to address intermediate-to-advanced biological and bioinformatics problems using a recipe-based approach. Working knowledge of the Python programming language is expected.
+	This book is for data scientists, bioinformatics analysts, researchers, and Python developers who want to address intermediate-to-advanced biological and bioinformatics problems using a recipe-based approach. Working knowledge of the Python programming language is expected.
 
 With the following software and hardware list you can run all code files present in the book (Chapter 1-11).
 
