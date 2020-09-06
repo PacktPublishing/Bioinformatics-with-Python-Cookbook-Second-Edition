@@ -8,9 +8,17 @@ RUN apt-get update && apt-get upgrade -y && apt-get install -y git wget build-es
 # R
 #RUN apt-get install -y r-bioc-biobase
 
-RUN conda update -n base -c defaults conda --force && conda update -y --all && conda install -y -c conda-forge statsmodels pip rpy2 r-ggplot2 r-gridextra pygraphviz seaborn pexpect networkx reportlab tzlocal simupop biopython
-RUN conda install -y -c bioconda gffutils pyvcf dendropy genepop plink trimal eigensoft pysam
-RUN pip install pygenomics ipython
+#RUN conda update -n base -c defaults conda --force && conda update -y --all
+RUN conda config --add channels r
+RUN conda config --add channels bioconda
+RUN conda config --add channels r
+RUN conda install -y pip ipython python=3.6
+RUN conda install -y -c r r-ggplot2 r-gridextra rpy2
+RUN conda install -y -c conda-forge statsmodels
+RUN conda install -y -c conda-forge seaborn pexpect networkx reportlab tzlocal simupop biopython
+RUN apt-get install -y plink1.9
+RUN conda install -y -c bioconda gffutils pyvcf dendropy genepop trimal eigensoft pysam
+RUN pip install pygenomics pygraphviz
 EXPOSE 9875
 
 RUN git clone https://github.com/PacktPublishing/Bioinformatics-with-Python-Cookbook-Second-Edition.git
