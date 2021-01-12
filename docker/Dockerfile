@@ -18,6 +18,8 @@ RUN conda install -y -c conda-forge statsmodels
 RUN conda install -y -c conda-forge seaborn pexpect networkx reportlab tzlocal simupop biopython
 RUN apt-get install -y plink1.9
 RUN conda install -y -c bioconda gffutils pyvcf dendropy genepop trimal eigensoft pysam
+RUN conda remove -y numpy
+RUN conda install -y -c numpy pandas
 RUN pip install pygenomics pygraphviz
 EXPOSE 9875
 
