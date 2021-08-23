@@ -9,6 +9,7 @@ RUN apt-get update && apt-get upgrade -y && apt-get install -y git wget build-es
 #RUN apt-get install -y r-bioc-biobase
 
 #RUN conda update -n base -c defaults conda --force && conda update -y --all
+RUN conda upgrade -n base conda
 RUN conda config --add channels r
 RUN conda config --add channels bioconda
 RUN conda config --add channels r
@@ -18,6 +19,7 @@ RUN conda install -y -c conda-forge statsmodels
 RUN conda install -y -c conda-forge seaborn pexpect networkx reportlab tzlocal simupop biopython
 RUN apt-get install -y plink1.9
 RUN conda install -y -c bioconda gffutils pyvcf dendropy genepop trimal eigensoft pysam
+RUN conda install -y pygraphviz
 RUN pip install pygenomics pygraphviz
 EXPOSE 9875
 
