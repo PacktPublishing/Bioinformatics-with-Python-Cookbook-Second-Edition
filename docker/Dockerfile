@@ -19,8 +19,8 @@ RUN conda install -y -c conda-forge statsmodels
 RUN conda install -y -c conda-forge seaborn pexpect networkx reportlab tzlocal simupop biopython
 RUN apt-get install -y plink1.9
 RUN conda install -y -c bioconda gffutils pyvcf dendropy genepop trimal eigensoft pysam
-RUN conda install -y pygraphviz
-RUN pip install pygenomics pygraphviz
+RUN conda install -y pygraphviz pandas
+RUN pip install pygenomics
 EXPOSE 9875
 
 RUN git clone https://github.com/PacktPublishing/Bioinformatics-with-Python-Cookbook-Second-Edition.git
